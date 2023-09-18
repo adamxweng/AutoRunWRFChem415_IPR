@@ -89,11 +89,11 @@ cat > ${namelistdir}/${namelistwrf} <<EOF
  !frames_per_auxinput7                = 1,
  !auxinput7_interval_m                = 60,
  force_use_old_data = .true.           !have to use it given version 4.1.5
- auxhist9_outname  = "./IRR_DIAG_d<domain>_<date>_202_base415"
- auxhist9_interval = 60, 60
- frames_per_auxhist9 = 24, 1 !output frame, 24 hours a file
- io_form_auxhist9    = 2
- history_outname = './wrfout_d<domain>_<date>_202_base415'
+ !auxhist9_outname  = "./IRR_DIAG_d<domain>_<date>_202_base415"
+ !auxhist9_interval = 60, 60
+ !frames_per_auxhist9 = 24, 1 !output frame, 24 hours a file
+ !io_form_auxhist9    = 2
+ history_outname = './wrfout_d<domain>_<date>_202_base415_wIPR'
  /
 
  &domains
@@ -209,7 +209,7 @@ cat > ${namelistdir}/${namelistwrf} <<EOF
  /
 
  &chem
- irr_opt = 1
+ !irr_opt = 1
  kemit                               = 8,         ! number of vertical levels in the emissions input data file
  chem_opt                            = 202, 202, 202,             ! chemistry option, 201 = MOZART-MOSAIC (4 bins + simplified SOA + no aqeuous chemistry), 202 = MOZART-MOSAIC (4 bins + VBS SOA + aqeuous chemistry).
  bioemdt                             = 30, 3.0, 3.0,              !* set as previous self-test run, timestep, biogenic, minutes
@@ -302,11 +302,11 @@ cat > ${namelistdir}/${namelistreal} <<EOF
  !frames_per_auxinput7                = 1,
  !auxinput7_interval_m                = 60,
  force_use_old_data = .true.           !have to use it given version 4.1.5
- auxhist9_outname  = "./IRR_DIAG_d<domain>_<date>_202_base415"
- auxhist9_interval = 60, 60
- frames_per_auxhist9 = 24, 1 !output frame, 24 hours a file
- io_form_auxhist9    = 2
- history_outname = './wrfout_d<domain>_<date>_202_base415'
+ !auxhist9_outname  = "./IRR_DIAG_d<domain>_<date>_202_base415"
+ !auxhist9_interval = 60, 60
+ !frames_per_auxhist9 = 24, 1 !output frame, 24 hours a file
+ !io_form_auxhist9    = 2
+ history_outname = './wrfout_d<domain>_<date>_202_base415_wIPR'
  /
 
  &domains
